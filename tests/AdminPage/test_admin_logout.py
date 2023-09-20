@@ -1,8 +1,9 @@
-from playwright.sync_api import Page, expect
+import pytest
+from playwright.sync_api import expect
 from src.PageObjects.Admin.admin_login_page import AdminLoginPage
-from src.PageObjects.Admin.admin_login_page import AdminHomePage
 
 
+@pytest.mark.sanity
 def test_validate_logout(set_up_admin_page) -> None:
     credentials = {'username': 'admin', 'password': 'password'}
     page = set_up_admin_page
