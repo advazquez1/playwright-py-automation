@@ -1,2 +1,4 @@
-playwright
-playwright-pytest
+playwright~=1.37.0
+pytest-playwright
+pytest~=7.4.2
+requests~=2.31.0
