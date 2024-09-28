@@ -1,6 +1,7 @@
 import pytest
 from src.utils.REST.rest_automation_online import RestAutomationOnline
 
+
 @pytest.fixture()
 def set_up_admin_page(page) -> None:
     page.goto("https://automationintesting.online/#/admin")

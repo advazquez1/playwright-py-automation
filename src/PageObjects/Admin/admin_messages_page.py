@@ -1,10 +1,12 @@
 
 class AdminMessagesPage:
-
+    """
+        Should only be referencing the Admin Messages page
+        https://automationintesting.online/#/admin/messages
+    """
     def __init__(self, page):
         self.page = page
         self._messages_container = page.locator("//*[@class='messages']")
-        # self._messages_subject_header = page.locator(f"//*[@data-testid='messageDescription0']/p[text()='{subject}']")
         self._messages_modal = page.locator("//*[@data-testid='message']")
 
     @property
@@ -15,6 +17,13 @@ class AdminMessagesPage:
     def messages_modal(self):
         return self._messages_modal
 
-    def click_message_by_subject(self, subject):
-        message_locator = self.page.locator(f"//*[contains(@data-testid, 'messageDescription')]/p[text()='{subject}']")
+    def click_message_by_subject(self, subject: str, index: int = 1):
+        """
+        Clicks the message by subject.
+        :param subject: The subject title to use reference on which message to select
+        :param index: Index position if there are multiple messages with same subject title. Defaults to first one
+        :return:
+        """
+        message_locator = \
+            (self.page.locator(f"(//*[contains(@data-testid, 'messageDescription')]/p[text()='{subject}'])[{index}]"))
         message_locator.click()
