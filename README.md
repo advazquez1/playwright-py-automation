@@ -1,7 +1,6 @@
 # playwright-py-automation
 ## Overview
 
----
 This project is a POC which showcases the use of Python 3+, playwright, and pytest in a test automation context
 The primary methodology which will be used for this project is the Page Object Model (POM), a design pattern that enhances test script maintainability and re-usabilty.
 
@@ -11,7 +10,6 @@ https://automationintesting.online/
 
 ## Tech Stack
 
----
 | Tool           | Description                                                          |
 |----------------|----------------------------------------------------------------------|
 | playwright     | An automation library for testing web applications with a single API |
@@ -22,7 +20,6 @@ https://automationintesting.online/
 
 ## Getting Started
 
----
 1. Clone the repository to your local machine
 2. Install the required Python packages
 
@@ -30,7 +27,6 @@ https://automationintesting.online/
 
 ## Executing Tests
 
----
 To run the demo scripts using pytest, we can use the following commands
 
 ```pytest --alluredir allure-results -s --headed --slowmo -k test_admin_logout```
@@ -43,7 +39,6 @@ To view results using Allure
 
 ## What the Demo Does
 
----
 The purpose of the project is to demonstrate a variety of different test cases using the Restful Booker Platform web application.
 In this demo, we'll perform the following.
 
@@ -59,7 +54,6 @@ It simplifies and enhances the readability of our test scripts.
 
 ## Standards and Best Practices
 
----
 The following respect title case convention
 - Directory names inside the `tests` and `src` folders
 
