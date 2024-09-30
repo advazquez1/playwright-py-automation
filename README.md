@@ -33,9 +33,13 @@ https://automationintesting.online/
 ---
 To run the demo scripts using pytest, we can use the following commands
 
-```pytest -s --headed --slowmo -k test_admin_logout```
+```pytest --alluredir allure-results -s --headed --slowmo -k test_admin_logout```
 
-```pytest -m sanity```
+```pytest --alluredir allure-results -m sanity```
+
+To view results using Allure
+
+```allure serve .\allure-results\```
 
 ## What the Demo Does
 
