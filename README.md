@@ -1,7 +1,7 @@
 # playwright-py-automation
 ## Overview
 
-This project is a POC which showcases the use of Python 3+, playwright, and pytest in a test automation context
+This project is a POC which showcases the use of Python 3+, playwright, and pytest in a test automation context.
 The primary methodology which will be used for this project is the Page Object Model (POM), a design pattern that enhances test script maintainability and re-usabilty.
 
 For this project, we'll be using a tester friendly automation web application as our demo
